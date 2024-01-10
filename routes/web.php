@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\CurrencyController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +35,7 @@ Route::middleware('auth')->group(function () {
 
 
 Route::get('test',[CategoryController::class,'test_methodu']);
+Route::get('currency',[CurrencyController::class,'getRates']);
 
 
 
